@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:gray;
+}
+footer{
+	margin-top:40px;
+}
+img{
+	border-radius:10px;
+}
+#contenedor{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+}
+#encabezado{
+	display:block;
+	margin: 0 auto;
+}
+h1{
+	color:green;
+}
+#nombre{
+	color:#06F;
+	font-size:32px;
+}
+
+	
