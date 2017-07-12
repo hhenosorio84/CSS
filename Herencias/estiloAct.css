@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	color:white;
+	background-color:black;
+}
+h1
+{
+	font-family:Verdana, Geneva, sans-serif;
+}
+a
+{
+	color: inherit;
+}
+div
+{
+	margin-left:20px;
+	margin-top:10px;
+}
+
