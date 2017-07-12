@@ -24,5 +24,11 @@ h1{
 	color:#06F;
 	font-size:32px;
 }
+.itemIndice{
+	list-style-type: upper-roman;
+}
+.enlace{
+	color:red;
+}
 
 	
