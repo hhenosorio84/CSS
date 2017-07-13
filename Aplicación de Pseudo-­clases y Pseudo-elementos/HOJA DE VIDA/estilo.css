@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:gray;
+}/*le da margen a pie de pagina*/
+footer{
+	margin-top:40px;
+}
+img{/*asigna un borde redondeado a las imagenes*/
+	border-radius:10px;
+}
+#contenedor{/* etiqueta para dar formato a un solo contenedor*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+}
+#encabezado{/* da formato al encabezado de la pagina*/
+	display:block;
+	margin: 0 auto;
+}
+h1{/*da formato a la etiqueta h1*/
+	color:green;
+	text-align:center;
+}
+#nombre{
+	color:#06F;
+	font-size:32px;
+}
+.itemIndice{
+	list-style-type: upper-roman;
+}
+.enlace{/*cambia color a los enlaces*/
+	color:red;
+}
+a[href^="#"]{
+	color:white;
+}
+img[src$="jpg"]{/*etiqueta para dar formato a las imagenes*/
+	border:3px solid black;
+	border-radius:10px;
+}
+*{
+	margin:1vh 1vw;
+}
+h1 + h2{ /*da formato a la sentencias que esten despues de h1*/
+	text-decoration: underline;
+}
+h2 ~ p{
+	text-align:justify;
+}
+ul{
+	text-align:justify;
+}
+ul li{
+	list-style:circle;
+}/* le asigna color rojo a los link*/
+a[href^="http://"]:visited{
+	color:red;
+}/* hace un efecto de color a los link*/
+a:hover{
+	color:green;
+}
+h2: first-child{
+	text-decoration:underline;
+}
+input:focus{
+	width:160px;
+	height:140px;
+}
+
+
+	
