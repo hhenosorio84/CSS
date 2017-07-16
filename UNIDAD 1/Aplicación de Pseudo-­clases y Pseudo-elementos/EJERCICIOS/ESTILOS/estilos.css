@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 20px;
+	font-family: Verdana;
+}
+
+/*Agrega padding superior e inferior de 10px y derecho e izq de 0px*/
+.menu-principal{
+	padding: 10px 0px;
+}
+
+/*A los enlaces del menú principal aplicale color verde y elimina el subrayado*/
+#menu-principal a {
+	color: green;
+	text-decoration: none;
+}
+
+/*Crea un estilo de la psuedoclase hover (el cual se activa cuando se está sobre el enlace del menú) que agregue el efecto de subrayado
+y la fuente con efecto de color rojo*/
+#menu-principal a:hover {
+	text-decoration: underline;
+	color:red;
+}
+
+/*Elimina los estilos del html y agrégalos con la propiedad content y la pseudo clase */
+#menu-principal a + a::before {
+	content: " | ";
+	color: black;
+}
+
+/*Agrega estilo al footer*/
+footer {
+	margin-top: 20px;
+	border-top: solid 1px black;
+	padding-top: 10px;
+	text-align: center;
+}
+/*Crea el estilo de tablas*/
+table {
+	border-collapse: collapse;
+}
+/*Agrega el estilo para los elementos table, th y td con borde de 1px negro y solido y padding de 10px.*/
+table, th, td {
+	border: solid 1px black;
+	padding: 10px;
+}
+/*Agrega estilo para las filas pares dentro del tbody de fondo tenga el color #CCC*/
+tbody tr:nth-child(even) {
+	background: #CCC;
+}
+/*Agrega estilo para las filas impares dentro del tbody tengan como color de fondo #CCF.*/
+tbody tr:nth-child(odd) {
+	background: #CCF;
+}
+/*Agrega efecto de hover para que las filas pares tengan color de fondo #DDD.*/
+tbody tr:nth-child(even):hover {
+	background: #DDD;
+}
+/*Agrega efecto de hover para que las filas impares tengan color de fondo #DDD.*/
+tbody tr:nth-child(odd):hover {
+	background: #DDF;
+}
+/*Agrega una clase con nombre sombra con el siguiente estilo: box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6).*/
+.sombra {
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+
