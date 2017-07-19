@@ -1,0 +1,19 @@
+
+/*Alineación del texto*/
+p{
+	text-align:justify;
+	text-indent:1cm;/* asigna una tabulacion en el texto*/
+	text-transform:capitalize;/*primera letra mayuscula*/
+	letter-spacing:5px; /*espacio entre letras*/
+}
+h1{
+	text-decoration: line-through;/*SUBRAYA EL TEXTO*/
+	word-spacing:30px;/* espacio entre palabras*/
+	color:orange;
+}
+/*COLORES Y SOMBRAS DEL PARRAFO*/
+p::selection{
+	background-color:green;
+	color:black;
+	text-shadow:1px 1px #fff;
+}

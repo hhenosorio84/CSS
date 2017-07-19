@@ -1,0 +1,35 @@
+/*ASIGNA FUENTE LOCAL SIN INSTALAR EN EL ORDENADOR*/
+@face.font {
+	font-family:FuenteLato;
+	src:url(../fuentes/Lato-Regular.ttf);
+}
+body{
+	margin: 20px;
+	font-family: Verdana;
+	font-family: 'Lora', serif;/*USO DE FUENTES DESDE GOOGLE FONTS*/
+}
+
+.resaltado{
+	background-color: yellow;
+	color: black;
+}
+
+#menu-principal{
+	padding: 10px 0px;
+	font-family:FuenteLato;
+	font-style:italic;
+}
+
+footer{
+	border-top: solid 1px black;
+	padding-top: 10px;
+	text-align: center;
+}
+
+h1.titulo{
+	background-color: aliceblue;
+	text-align: center;
+	padding: 10px;
+	font-family:FuenteLato;
+	font-variant:small-caps;
+}

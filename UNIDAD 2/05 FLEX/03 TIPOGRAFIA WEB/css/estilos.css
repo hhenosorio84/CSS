@@ -1,0 +1,12 @@
+/* LOS TIPOS DE FUENTES FUERON ADQUIRIDOS DE GOOGLE FONTS*/
+h1{
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 2em;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+p{
+  font-family: 'Tangerine', cursive;
+  font-size: 2em;
+  /*font-style:italic;*/
+}
