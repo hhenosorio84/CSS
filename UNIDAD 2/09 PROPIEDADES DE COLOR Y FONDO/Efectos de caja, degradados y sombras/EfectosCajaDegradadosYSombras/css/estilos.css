@@ -1,11 +1,11 @@
 body {
+		color: #000305;
 		font-size: 87.5%;
 		font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 		line-height: 1.429;
 		margin: 0;
 		padding: 0;
 		text-align: left;
-		color: #000305;
 	}
 
 /* Encabezados */
@@ -25,9 +25,9 @@ h2, h3, h4, h5, h6 {
 a {outline: 0;}
 a img {border: 0px; text-decoration: none;}
 a:link, a:visited {
+	color: rgb(51, 153, 204);
 	padding: 0 1px;
 	text-decoration: underline;
-	color: rgb(51, 153, 204);
 }
 
 /* Párrafos */
@@ -121,40 +121,45 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		padding: 0;
 		text-align: center;
 		width: 800px;
+		border-radius:5px;
+		/*COMPATIBILIDAD DE LOS DEMAS NAVEGADORES*/
+		-moz- border-radius:5px;
+		-webkit-border-radius:5px;
 	}
 
 	#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
 	#banner nav li {float: left; display: inline; margin: 0;}
 
 	#banner nav a:link, #banner nav a:visited {
+		color: #fff;
 		display: inline-block;
 		height: 30px;
 		padding: 5px 1.5em;
 		text-decoration: none;
-		color: #fff;
 	}
 	#banner nav a:hover, #banner nav a:active{
+		border-radius:15px 10px;/*colocacion de radios en el menu principal*/
 		background: hsla(200, 60%, 50%, 0.65);
-		text-shadow: none!important;
+		text-shadow: none !important;
 	}
 	#banner nav .active a:link, #banner nav .active a:visited {
+		border-radius:15px 10px 6px;/*colocacion de radios en el menu principal*/
+		background: #3399CC;
 		text-shadow: none !important;
-		background: #3399cc;
-		color: #fff;
 	}
 
 /*
 	Contenido Relacionado con el contenido principal
 *****************/
-/* Contenido de fondos con imagenes apiladas*/
 #featured {
-	background: 	url(../img/css3_html5_badges.png) right top no-repeat,
-					url(../img/papel_doblado.jpg) left top repeat;
-	background-size: 150px, 300px;/*Tamaño de las imagenes en orden*/
+	background: url(../img/css3_html5_badges.png) right top no-repeat,
+							url(../img/papel_doblado.jpg) left top repeat;
+	background-size: 150px, 300px;
 	margin-bottom: 2em;
 	overflow: hidden;
 	padding: 20px;
 	width: 760px;
+	border-radius:50px 30px 15px 5px;/*DIFERENTES RADIOS DE LAS IMAGENES*/
 }
 
 #featured h2 {font-size: 1.714em; margin-bottom: 0.333em;}
@@ -172,6 +177,8 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 	padding: 20px 20px;
 	width: 760px;
 }
+#content .hentry{
+	background: linear-gradient(#fff, #68b8de, #cdedff);
 
 /*
 	Sección Extras
@@ -196,12 +203,16 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 #extras a:hover, #extras a:active {}
 
 	/* Blogroll */
-	#extras .blogroll {
+	#extras. blogroll{
+		background: radial-gradient(#FFF,#3399CC,#FFF);
 		float: left;
 		width: 615px;
 	}
 
 	#extras .blogroll li {float: left; margin: 0 20px 0 0; width: 185px;}
+	#extras .blogroll a:link, #extras.blogroll a:visited{
+		color: #363636;
+	}
 
 	/* Redes Sociales */
 	#extras .social {
