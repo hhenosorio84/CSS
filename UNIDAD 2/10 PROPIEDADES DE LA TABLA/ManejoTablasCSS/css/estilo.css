@@ -1,0 +1,28 @@
+@charset "utf-8";
+/*ESTILOS DE TABLA*/
+table{
+	width:50%; /*ancho de la ventana de la tabla*/
+	border-collapse:collapse;/*HAce que no se repitan los bordes*/
+}
+table, td, th{/*bordes de la tabla*/
+	border: 1px solid black;
+}
+
+td,th{ /*ancho y alto de la tabla*/
+	width:100px;
+	height:30px;
+}
+th {
+	text-align:right;
+	vertical-align:top;
+}
+td{
+	text-align:left;
+	vertical-align:bottom;
+}
+
+tr:nth-child(odd){/*Agrega formato a las filas impares*/
+background-color:#d1d1d1;
+}
+
+
