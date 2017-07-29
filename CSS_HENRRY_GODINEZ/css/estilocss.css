@@ -34,9 +34,10 @@ header nav{
 header nav a{
 	text-decoration:none;
 	font-size:20px;
+	color:#36F;
 }
 /********IMAGEN CENTRAL*******/
-.imagencen{
+.centro{
 	width:75.4%;
 	margin:auto;
 	padding:5px 0px 10px 0px;
@@ -45,15 +46,57 @@ header nav a{
 	border-bottom-right-radius:10px;
 }
 
-.imagencen img{
+#imagencen{
 	width:90%;
 	margin:auto;
 	display:block;
 	border-radius:10px;
 	box-shadow:5px 5px #000;
-	
-	
+}
+/* ****** ESTILO DE  LAS COLUMNAS*******/
+.contenedor-columna{
+	width:100%;
+	margin:auto;
+	/*margin-bottom:50px;*/
+}
+.columnas{
+	width:50%;
+	float:left;
+	padding:20px 20px;
+	box-sizing:border-box;
+	/*margin:auto;*/
+}
+.contenedor-columna img{
+	width:100%;
+	border-radius:10px;
+	box-shadow:5px 5px  #003333;
 	
 }
-	
+.contenedor-columna h2{
+	margin-top:15px;
+	font-size:20px;
+	color:white;
+	text-shadow:2px 2px  #02010a;
+	letter-spacing:1px;
+}
+p{
+	color: #CCC;
+	font-size:12px;
+	text-align:justify;
+	padding:10px 0px;
+	letter-spacing:1px;
+}
+
+/** FOOTHER***/
+footer{
+	height:40px;
+	background-color:#455868;
+	margin-top:35px;
+	color:#fff;
+	font-weight:800;
+	font-size:17px;
+	letter-spacing:2px;
+	text-align:center;
+	padding-top:20px;
+}
 	
