@@ -1,0 +1,67 @@
+body {
+	margin: 20px;
+	background-color: black;
+	color: white;
+	font-family: Raleway;
+}
+
+header h1{
+	text-align: center;
+}
+
+#contenido {
+	display: flex;
+	flex-direction: column;
+}
+
+#contenido > h1 {
+	padding: 10px;
+	text-align: center;
+}
+
+footer {
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+
+img{
+	border: 2px solid white;
+	width: 200px;
+}
+
+.contenedor > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+}
+
+/*Aplica un filtro de escala de grises al 100% a la primera imagen.*/
+#imagen1{
+	-webkit-filter: grayscale(80%);
+	filter: grayscale(80%);
+}
+
+/*Aplica un filtro de desenfoque a 10px a la segunda imagen.*/
+#imagen2{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+/*Aplica un filtro de inversión de colores al 100% a la tercera imagen.*/
+#imagen3{
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+
+/*Aplica un filtro de sepia al 90% a la cuarta imagen.*/
+#imagen4{
+	-webkit-filter: sepia(100%);
+	filter: sepia(90%);
+}
+

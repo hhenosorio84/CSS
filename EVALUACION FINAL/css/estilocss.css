@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+header{
+	background-color:#5b7989;
+	padding:15px 30px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+.wrapper{
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+	overflow:hidden;
+}
+
+header .logo{
+	color:#FFF;
+	font-size:50px;
+	float:left;
+	text-shadow:2px 2px  #02010a;
+}
+header nav{
+	float:right;
+}

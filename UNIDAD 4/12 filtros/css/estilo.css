@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+#contenido img{
+	width:100%;
+	 /*APLICANDO FILTRO DE ESCALA DE GRICES*/
+	-webkit-filter: grayscale(80%); /*FORMA DE COMPATIBILIDAD*/
+	filter: grayscale(80%);
+}
+
