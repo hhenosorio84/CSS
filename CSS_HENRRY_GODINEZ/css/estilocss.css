@@ -6,87 +6,141 @@
 body{
 	background-color: #424242;
 }
-/**********ENCABEZADO***************/
+/********** ESTILO DEL ENCABEZADO***************/
 header{
 	background-color:#5b7989;
-	padding:20px 10px;
+	/*padding:20px 10px;*/
+	padding-bottom:10px;
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
+	/*display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;*/
 }
+/********** ESTILO DEL TEXTO DE ENCABEZADO*******/
+#logo{
+	color:#FFF;
+	font-size:50px;
+	float:left;
+	text-shadow:2px 2px  #02010a;
+	line-height:50PX;
+	
+}
+/********* ESTILO DEL MENU DEL ENCABEZADO*******/
+header nav{
+
+	float:right;
+	padding:0px 40px;
+	line-height:50px;
+}
+/******** ESTILO DE FUENTE DE MENU DEL ENCABEZADO********/
+header nav a{
+	text-decoration:none;
+	font-size:20px;
+	color:#36F;
+	text-shadow:1px 1px  #02010a
+}
+
+/*************	wrapper********/
 .wrapper{
 	width:90%;
 	max-width:1000px;
 	margin:auto;
 	overflow:hidden;
 }
-
-header .logo{
-	color:#FFF;
-	font-size:50px;
-	float:left;
-	text-shadow:2px 2px  #02010a;
-	line-height:50PX;
-}
-header nav{
-	float:right;
-	line-height:50px;
-}
-header nav a{
-	text-decoration:none;
-	font-size:20px;
-	color:#36F;
-}
+/******************************************************************************************************/
 /********IMAGEN CENTRAL*******/
-.centro{
-	width:75.4%;
+.imacentro{
+	width:100%;
 	margin:auto;
-	padding:5px 0px 10px 0px;
+	padding:10px;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	justify-content:center;
 	background-color:#82c3a6;
-	border-bottom-left-radius:10px;
-	border-bottom-right-radius:10px;
+	/*border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;*/
 }
 
-#imagencen{
+.imacentro img{
 	width:90%;
-	margin:auto;
-	display:block;
 	border-radius:10px;
 	box-shadow:5px 5px #000;
+	
 }
+/********************************************************************************************/
 /* ****** ESTILO DE  LAS COLUMNAS*******/
 .contenedor-columna{
 	width:100%;
 	margin:auto;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	background-color:#d5c75f;
+	border:solid 1px;
+
+	/*flex-direction:row;*/
+	
+	/*/flex-wrap:wrap;*/
 	/*margin-bottom:50px;*/
 }
 .columnas{
-	width:50%;
-	float:left;
-	padding:20px 20px;
-	box-sizing:border-box;
-	/*margin:auto;*/
-}
-.contenedor-columna img{
 	width:100%;
-	border-radius:10px;
-	box-shadow:5px 5px  #003333;
+	padding:10px;
+	box-sizing:border-box;
+	margin:auto;
+		
+
+	
 	
 }
+/***************************************************************************************/
+/*************************IMAGENES********************************************************/
+#imaruinas{
+	border-radius:10px;
+	box-shadow:2px 2px  #82c3a6;
+	margin:auto;
+	display:block;
+	
+	
+}
+#imaruinas:hover{
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	border-radius:15px;
+	
+}
+
+#monse{
+	border-radius:10px;
+	box-shadow:2px 2px   #82c3a6;
+	margin:auto;
+	display:block;
+	
+}
+#monse:hover{
+    transform:translateX(20px 5px);
+    /*transform: translateY(5px);*/
+   /* transform: translate3d(5px 20px);*/
+    
+}
 .contenedor-columna h2{
-	margin-top:15px;
-	font-size:20px;
+	margin:auto;
+	font-size:25px;
 	color:white;
-	text-shadow:2px 2px  #02010a;
+	text-shadow:1px 1px  #02010a;
 	letter-spacing:1px;
+	margin-top:30px;
 }
 p{
-	color: #CCC;
-	font-size:12px;
+	color: #000;
+	font-size:16px;
 	text-align:justify;
 	padding:10px 0px;
 	letter-spacing:1px;
 }
-
+/*******************************************************************************/
 /** FOOTHER***/
 footer{
 	height:40px;
@@ -98,5 +152,7 @@ footer{
 	letter-spacing:2px;
 	text-align:center;
 	padding-top:20px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
 }
 	
