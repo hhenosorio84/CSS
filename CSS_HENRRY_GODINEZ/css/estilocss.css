@@ -1,45 +1,5 @@
-@charset "utf-8";
-/* CSS Document */
-*{
-	margin:auto;
-}
-
 body{
-	background-color: #424242;
-}
-/********** ESTILO DEL ENCABEZADO***************/
-header{
-	background-color:#5b7989;
-	/*padding:20px 10px;*/
-	padding-bottom:10px;
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
-	/*display:-webkit-flex;
-	display:-ms-flexbox;
-	display:flex;*/
-}
-/********** ESTILO DEL TEXTO DE ENCABEZADO*******/
-#logo{
-	color:#FFF;
-	font-size:50px;
-	float:left;
-	text-shadow:2px 2px  #02010a;
-	line-height:50PX;
-	
-}
-/********* ESTILO DEL MENU DEL ENCABEZADO*******/
-header nav{
-
-	float:right;
-	padding:0px 40px;
-	line-height:50px;
-}
-/******** ESTILO DE FUENTE DE MENU DEL ENCABEZADO********/
-header nav a{
-	text-decoration:none;
-	font-size:20px;
-	color:#36F;
-	text-shadow:1px 1px  #02010a
+	background-color: #02010a;
 }
 
 /*************	wrapper********/
@@ -49,6 +9,33 @@ header nav a{
 	margin:auto;
 	overflow:hidden;
 }
+/********** ESTILO DEL ENCABEZADO***************/
+header{
+	margin: auto;
+	background-color:#5b7989;
+	padding: 30px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+/********** ESTILO DEL TEXTO DE ENCABEZADO*******/
+#logo{
+	color:#FFF;
+	font-size:25px;
+	float:left;
+	text-shadow:2px 2px  #02010a;
+	
+}
+/********* ESTILO DEL MENU DEL ENCABEZADO*******/
+header nav{
+	float:right;
+}
+/******** ESTILO DE FUENTE DE MENU DEL ENCABEZADO********/
+header nav a{
+	text-decoration:none;
+	font-size:16px;
+	color:#36F;
+	text-shadow:1px 1px  #02010a;
+}
 /******************************************************************************************************/
 /********IMAGEN CENTRAL*******/
 .imacentro{
@@ -56,6 +43,7 @@ header nav a{
 	margin:auto;
 	padding: 15px;
 	background-color:#82c3a6;
+	box-sizing: border-box;
 }
 
 .imacentro img{
@@ -76,6 +64,7 @@ header nav a{
 	display:flex;
 	background-color:#d5c75f;
 	border:solid 1px;
+	box-sizing: border-box;
 
 	/*flex-direction:row;*/
 	
@@ -85,7 +74,6 @@ header nav a{
 .columnas{
 	width:50%;
 	padding:5px;
-	box-sizing:border-box;
 	margin:auto;
 		
 
@@ -93,13 +81,12 @@ header nav a{
 	
 }
 /***************************************************************************************/
-/*************************IMAGENES********************************************************/
+/*************************IMAGENES INDEX********************************************************/
 #imaruinas{
-	width: 80%;
+	width: 100%;
 	border-radius:10px;
 	box-shadow:2px 2px  #82c3a6;
 	margin:auto;
-	display:block;
 	
 	
 }
@@ -111,11 +98,10 @@ header nav a{
 }
 
 #monse{
-	width: 75%;
+	width: 100%;
 	border-radius:10px;
 	box-shadow:2px 2px   #82c3a6;
 	margin:auto;
-	display:block;
 	
 }
 #monse:hover{
@@ -125,6 +111,9 @@ header nav a{
 
     
 }
+.contenedor-columna {
+	margin: auto;
+}
 .contenedor-columna h2{
 	margin:auto;
 	font-size:25px;
@@ -132,100 +121,117 @@ header nav a{
 	text-shadow:1px 1px  #02010a;
 	letter-spacing:1px;
 	margin-top:10px;
+	text-align: center;
 }
 p{
 	color: #000;
-	font-size:16px;
+	font-size:12px;
 	text-align:justify;
-	padding:10px 0px;
 	letter-spacing:1px;
 }
-/*******************************************************************************/
-/** FOOTHER***/
-footer{
-	height:40px;
-	background-color:#455868;
-	margin-top:35px;
-	color:#fff;
-	font-weight:800;
-	font-size:17px;
-	letter-spacing:2px;
-	text-align:center;
-	padding-top:20px;
+
+/***************************COLUMNAS PAGINAS ALTERNAS*******************************************************************************/
+/**********************************************CONTENEDOR DE LAS COLUMNAS**********************************************************/
+.color-fondo{
+	width: 100%;
+	background-color:#d5c75f;
+	border:solid 1px;
+}
+.galeria{
+	width: 100%;
+	margin: auto;
+	margin-bottom: 50px;
+	
+}
+/*******COLUMNAS********/
+.columnas2{
+	width: 33.333%;
+	float: left;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	margin: auto;
+}
+/*********IMAGENES EN LAS COLUMNAS***************/
+.columnas2 img{
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 10px;
+	
+}
+
+/**********************EFECTO PARA IMAGENES*********/
+
+#ima1{
+	filter: blur(10px);
+}
+#ima2, #ima4, #ima6{
+	filter: grayscale(100%);
+}
+#ima3{
+	filter: sepia(90%);
+}
+/******************** PIE DE PAGINAS**************/
+footer .fondopie{
+	width: 100%;
+	box-shadow: 0px 2px 2px #000;
+	-moz-box-shadow:0px 2px 2px #000;
+	-webkit-box-shadow: 0px 2px 2px #000;
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px;
+	background-color: #C6d5c5;
+	height:150px;
+}
+footer .contacto{
+	width: 25%;
+	margin: auto;
+	float: left;
+}
+footer .terminos{
+	width: 25%;
+	margin: auto;
+	float: left;
+}
+footer .redes{
+	width: 25%;
+	margin: auto;
+	float: left;
+}
+footer .derechos{
+	width: 25%;
+	margin: auto;
+	float: left;
+}
+footer img{
+	width: 40px;
+}
+footer a{
+	color:cadetblue;
+	margin: auto;
+	text-decoration: none;
 }
 .contenido{
 	width: 100%;
 	}
+/****************************************************MEDIDAS ADAPTATIVAS********************************************************/
 /************************MOVILES************************/
-@media only screen and (max-width:480px){
-	body{
-		width: 320px;
-	}
-		header{
-		clear: both;
-		width: 320px;
-	}
-	nav{
-		clear: both;
-		width: 320px;
-	}
-	#logo{
-		clear: both;
-		width: 320px;
-	}
-	.imacentro{
-		clear: both;
-		width: 320px;
-	}
-	.columnas{
-		clear: both;
-		width: 320px;
-	}
-	.contenedor-columna{
-		clear: both;
-		width: 320px;
-	}
-	#monse{
-		clear: both;
-		width: 320px;
-	}
-	#imaruinas{
-		clear: both;
-		width: 320px;
-	}
 
-}
-/************************************TABLETA**************************************/
-@media only and (min-width:481px)and (max-width:768px){
+@media screen and (min-width:900px) and :(max-width:900px){
 	body{
-		width:80%;
-	}
-	header{
 		clear: both;
-		width: 100%;
+		width:100%;
 	}
-	nav{
-		clear: both;
-		width: 100%;
+	@media screen and (min-width:720px){
+		.culumnas2{
+			width: 100%;
+			margin: auto;
+		}
+		footer img{
+			width: 100%;
+			clear: both;
+			
+		}
+			.culumnas2 img{
+			width: 100%;
+			margin: auto;
+		}
 	}
-	.imacentro{
-		clear: both;
-		width: 100%;
-	}
-	.columnas{
-		clear: both;
-		width: 100%;
-	}
-	.contenedor-columna{
-		clear: both;
-		width: 100%;
-	}
-}
-/************************************PC********************************/
-@media only and (min-width:769px){
-	body{
-		960px;
-	}
-}
